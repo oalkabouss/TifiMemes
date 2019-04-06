@@ -27,6 +27,14 @@
 
 
     <div class="container">
+
+     <div class="row" style="margin-top:20px;">
+            <canvas id="memecanvas" class="responsive-img">
+                    Sorry, canvas not supported
+            </canvas>
+     </div>
+
+
         <div class="row">
             <form id="form1" runat="server">
                 <div class="file-field input-field">
@@ -38,10 +46,22 @@
                         <input class="file-path validate" type="text">
                     </div>
                 </div>
-                <img id="blah" class="responsive-img" height="20" src="#" />
+                <img style="display:none;" id="blah" src="#" />
 
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type='text' value='omg' id='top-text' />
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input type='text' value='this is totally amazingg' id='bottom-text' />
+                        <label for="password">Password</label>
+                    </div>
+                </div>
             </form>
-
         </div>
     </div>
     <script src="app.js"></script>
